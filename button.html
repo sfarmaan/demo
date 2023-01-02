@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sandbox</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="button.css">
+  </head>
+  <body>
+<h1>Custom Code Demo Sandbox</h1>
+<p>Click on the following buttons and assign tags and triggers according to your Conversion Tracking requirements</p>
+<div class="frame">
+  <button class="custom-btn btn-1">Purchase</button>
+    <button class="custom-btn btn-2"><a href="tel:+4733378901"><span>Call</a></span></button>
+  <button class="custom-btn btn-3"><a href="mailto:mbappe@psg.com" target="_blank"><span>Send Email</a>
+      </span></button></a>
+  <button class="custom-btn btn-4"><span>Form Submission</span></button>
+  <button class="custom-btn btn-5"><span>Page Redirect</span></button>
+  <button class="custom-btn btn-6"><span>New Button</span></button>
+  <button class="custom-btn btn-7"><span>New Button</span></button>
+  <button class="custom-btn btn-8"><span>New Button</span></button>
+  <button class="custom-btn btn-9">New Button</button>
+  <button class="custom-btn btn-10">New Button</button>
+  <button class="custom-btn btn-11">New Button<div class="dot"></div></button>
+  <button class="custom-btn btn-12"><span>Click!</span><span>New Button</span></button>
+  <button class="custom-btn btn-13">New Button</button>
+  <button class="custom-btn btn-14">New Button</button>
+  <button class="custom-btn btn-15">New Button</button>
+  <button class="custom-btn btn-16">New Button</button>
+  <p style="font-family: Andale Mono, monospace;">
+    Suhail Farmaan</p>
+</div>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11050257242"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11050257242');
+</script>
+
+    <script>
+  window.addEventListener('load',function(){
+
+    jQuery('[href*="mailto:"]').click(function(){
+      gtag('event', 'conversion', {
+      'send_to': 'AW-11050257242/2RpMCPvy7IYYENqWlpUp',
+      'event_callback': callback
+  });
+    });
+
+    gtag('event', 'conversion', {
+      'send_to': 'AW-11050257242/KSVWCK2o7YYYENqWlpUp',
+      'event_callback': callback
+  });
+
+  });
+</script>
+ </body>
+</html>
